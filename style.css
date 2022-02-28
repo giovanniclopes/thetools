@@ -104,13 +104,17 @@ form button:focus {
 
 /* password generator */
 
-div.password-generator {
-    position: absolute;
-    align-items: center;
-    align-content: center;
-    margin: 0 auto;
-    padding: 30px;
+.password-generator {
+    margin: auto;
+    width: 370px;
+    border-radius: 7px;
+    padding: 25px 30px;
+    background: #fff;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255,255,255,.5);
+    border-top: 1px solid rgba(255,255,255, .5);
+    border-left: 1px solid rgba(255,255,255,.5);
+    text-align: left;
 }
 
 .result-container {
@@ -118,24 +122,29 @@ div.password-generator {
     font-size: 18px;
     padding: 5px;
     letter-spacing: 1px;
-    height: 60px;
-    margin-bottom: 35px;
 }
+
 
 #PasswordResult {
-    border: 1px solid #999;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.068);
+    border-top: 1px solid rgba(255, 255, 255, 0.103);
+    border-left: 1px solid rgba(255, 255, 255, 0.096);
     border-radius: 5px;
-    height: max-content;
+    width: 110%;
+    padding: 30px 20px 5px 20px;
+    height: 100px;
+    margin-left: -15px;
+    margin-right: 50px;
+    text-align: center;
+    resize: none;
+    outline: none;
+    font-size: 30px;
+    cursor: default;
 }
 
-#passwordResult {
-    border: 1px solid #999;
-    padding: 50px;
-    background: none;
-    font-size: 17px;
-    margin-top: auto;
-    outline: none;
-    resize: none;
+#PasswordResult:hover, #PasswordResult:focus {
+    border: 1px solid #DC3545;
 }
 
 .settings {
@@ -148,6 +157,10 @@ input {
     width: 50px;
     padding: 0px 5px;
     border-radius: 5px;
+}
+
+input:hover, input:focus {
+    border: 1px solid #DC3545;
 }
 
 .buttons {

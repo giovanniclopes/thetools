@@ -18,3 +18,82 @@ p {
     font-family: var(--primary-font);
 }
 
+.wrapper {
+    margin: auto;
+    width: 370px;
+    border-radius: 7px;
+    padding: 25px 30px;
+    background: #fff;
+}
+
+.wrapper header {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    color: #212529;
+}
+
+.wrapper form {
+    margin: 35px 0 20px;
+}
+
+form .row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form .row label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+form :where(textarea, select, button) {
+    outline: none;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+form .row textarea {
+    border: 1px solid #999;
+    resize: none;
+    height: 110px;
+    padding: 8px 10px;
+    font-size: 15px;
+}
+
+form .row .outer {
+    height: 47px;
+    border-radius: 5px;
+    align-items: center;
+    border: 1px solid #999;
+    display: flex;
+    padding: 0 10px;
+}
+
+form .row select {
+    font-size: 14px;
+}
+
+form button {
+    height: 52px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    background: #212529;
+    border-radius: 4px;
+    transition: .4s;
+}
+
+form button:focus {
+    transform: translateY(3px);
+}
+
+.wrapper, form .row .outer:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255,255,255,.5);
+    border-top: 1px solid rgba(255,255,255, .5);
+    border-left: 1px solid rgba(255,255,255,.5);
+}

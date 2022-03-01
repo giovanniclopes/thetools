@@ -12,8 +12,12 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+}
+
 nav {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 p {
@@ -22,159 +26,8 @@ p {
 
 /* text to speech */
 
-.wrapper {
-    margin: auto;
-    width: 370px;
-    border-radius: 7px;
-    padding: 25px 30px;
-    background: #fff;
-}
-
-.wrapper header {
-    font-size: 28px;
-    font-weight: 600;
-    text-align: center;
-    color: #212529;
-}
-
-.wrapper form {
-    margin: 35px 0 20px;
-}
-
-form .row {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-
-form .row label {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-form :where(textarea, select, button) {
-    outline: none;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-}
-
-form .row textarea {
-    border: 1px solid #999;
-    resize: none;
-    height: 110px;
-    padding: 8px 10px;
-    font-size: 17px;
-}
-
-form .row .outer {
-    height: 47px;
-    border-radius: 5px;
-    align-items: center;
-    border: 1px solid #999;
-    display: flex;
-    padding: 0 10px;
-}
-
-form .row select {
-    font-size: 14px;
-}
-
-form button {
-    height: 52px;
-    margin-top: 10px;
-    color: #fff;
-    font-size: 17px;
-    cursor: pointer;
-    background: #212529;
-    border-radius: 4px;
-    transition: .4s;
-}
-
-form button:focus {
-    transform: translateY(3px);
-}
-
-.wrapper, form .row .outer:hover {
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(255,255,255,.5);
-    border-top: 1px solid rgba(255,255,255, .5);
-    border-left: 1px solid rgba(255,255,255,.5);
-}
 
 /* password generator */
 
-.password-generator {
-    margin: auto;
-    width: 370px;
-    border-radius: 7px;
-    padding: 25px 30px;
-    background: #fff;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(255,255,255,.5);
-    border-top: 1px solid rgba(255,255,255, .5);
-    border-left: 1px solid rgba(255,255,255,.5);
-    text-align: left;
-}
 
-.result-container {
-    background: #fff;
-    font-size: 18px;
-    padding: 5px;
-    letter-spacing: 1px;
-}
-
-
-#PasswordResult {
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.13);
-    border: 1px solid rgba(255, 255, 255, 0.068);
-    border-top: 1px solid rgba(255, 255, 255, 0.103);
-    border-left: 1px solid rgba(255, 255, 255, 0.096);
-    border-radius: 5px;
-    width: 110%;
-    padding: 30px 20px 5px 20px;
-    height: 100px;
-    margin-left: -15px;
-    margin-right: 50px;
-    text-align: center;
-    resize: none;
-    outline: none;
-    font-size: 30px;
-    cursor: default;
-}
-
-#PasswordResult:hover, #PasswordResult:focus {
-    border: 1px solid #DC3545;
-}
-
-.settings {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-input {
-    border: 1px solid #999;
-    width: 50px;
-    padding: 0px 5px;
-    border-radius: 5px;
-}
-
-input:hover, input:focus {
-    border: 1px solid #DC3545;
-}
-
-.buttons {
-    display: flex;
-}
-
-.btn {
-    width: 50%;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    margin: 10px;
-    padding: 7px;
-    font-size: 16px;
-    background: #131313;
-}
+/* dicionary */

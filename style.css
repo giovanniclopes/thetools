@@ -24,10 +24,7 @@ p {
     font-family: var(--primary-font);
 }
 
-/* text to speech */
+.svg-card {
+    margin: 1em auto;
+}
 
-
-/* password generator */
-
-
-/* dicionary */
